@@ -11,16 +11,16 @@ resources:
 
 variables:
   tag: '$(Build.BuildId)'
-  APP_PORT: '$(APP_PORT)'
-  DB_DEBUG: '$(DB_DEBUG)'
-  DB_HOST: '$(DB_HOST)'
-  DB_PASSWORD: '$(DB_PASSWORD)'
-  DB_PORT: '$(DB_PORT)'
-  DB_USER: '$(DB_USER)'
-  GIN_MODE: '$(GIN_MODE)'
-  REQ_VALIDATOR: '$(REQ_VALIDATOR)'
-  MIGRATE: '$(MIGRATE)'
-  SEED: '$(SEED)'
+  APP_PORT: '$(appPort)'
+  DB_DEBUG: '$(dbDebug)'
+  DB_HOST: '$(dbHost)'
+  DB_PASSWORD: '$(dbPassword)'
+  DB_PORT: '$(dbPort)'
+  DB_USER: '$(dbUser)'
+  GIN_MODE: '$(ginMode)'
+  REQ_VALIDATOR: '$(reqValidator)'
+  MIGRATE: '$(migrate)'
+  SEED: '$(seed)'
 
 stages:
 - stage: Build
